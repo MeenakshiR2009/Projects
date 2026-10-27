@@ -1,0 +1,121 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: none;
+    background:linear-gradient(to right bottom, #6366f1, #52b2a8);
+}
+.main{
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-areas:  "profile storyline storyline"
+                          "profile challenges lesson"
+                          "profile gratitude gratitude";
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    padding:100px;
+}
+h4{
+    line-height:1.5;
+}
+
+.present{
+    box-shadow: 4px 4px 4px 4px rgb(222, 219, 219);
+    height:620px;
+    padding:50px;
+    grid-area: profile;
+    line-height:1.8;
+    background-color: white;
+    width:350px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 2s ease;
+}
+.image{
+    margin:0px auto;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+}
+.image img{
+    height:100%;
+    width:100%;
+    margin-bottom: 20px;
+    border-radius:50%;
+}
+.link h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #6366f1;
+}
+.link a{
+    text-decoration: none;
+    color:#6366f1;
+}
+.challenge{
+    box-shadow: 4px 4px 4px 4px rgb(222, 219, 219);
+    height:250px;
+    padding:50px;
+    line-height:2;
+    align-self:start;
+    grid-area: challenges;
+    background-color: white;
+    width:350px;
+    border-radius: 50px;
+    transition: transform 2s ease;
+}
+.lesson{
+    box-shadow: 4px 4px 4px 4px rgb(222, 219, 219);
+    height:250px;
+    padding:40px;
+    line-height:2;
+    align-self:start;
+    grid-area: lesson;
+    background-color: white;
+    width:350px;
+    border-radius: 50px;
+    transition: transform 2s ease;
+}
+.gratitude{
+    box-shadow: 4px 4px 4px 4px rgb(222, 219, 219);
+    height:150px;
+    padding:30px;
+    line-height:2;
+    grid-area: gratitude;
+    background-color: white;
+    align-self:end;
+    width:90%;
+    border-radius: 50px;
+    transition: transform 2s ease;
+}
+.storyline{
+    box-shadow: 4px 4px 4px 4px rgb(222, 219, 219);
+    height:160px;
+    margin:30px 0px;
+    text-align: center;
+    padding:15px 50px;
+    line-height:2;
+    grid-area: storyline;
+    background-color: white;
+    align-self:start;
+    width:90%;
+    border-radius: 50px;
+    transition: transform 2s ease;
+}
+.present:hover ,.challenge:hover, .lesson:hover,.gratitude:hover,.storyline:hover{
+    transform:scale(1.1);
+}
+.storyline span{
+    font-size: 40px;
+    font-family: "Mea Culpa", cursive;
+    color: #6366f1;
+}
